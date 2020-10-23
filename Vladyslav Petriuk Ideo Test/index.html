@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel = "stylesheet" href = "assets/CSS/style.css" >
+    <script type="text/jscript" src="assets/JS/JavaScript.js"></script>
+    <title>Ideo</title> 
+</head>
+<body>
+   <header class = "header">
+     <div id="search" >
+        <div onclick="search()"><img src="assets/Img/search.png"></div>
+         <form role="form" action="/requestFine" autocomplete="off" method="POST">
+         <input type="text" id="search_input"name="search">
+         </form>
+     </div>
+     
+   
+       <div class="container">
+           <div class="header_inner">
+              <div class="nav_img">
+                <div class="nav_img_inside">
+                    <img src = "assets/Img/simple.png">
+                </div>  
+              </div>
+               <nav class="nav">
+                   <a class="nav_link" href="#">Aktualności</a>
+                   <a class="nav_link" href="#">Branże</a>
+                   <a class="nav_link" href="#">Produkty</a>
+                   <a class="nav_link" href="#">Usługi</a>
+                   <a class="nav_link" href="#">Referencje</a>
+                   <a class="nav_link" href="#">Kontakt</a>
+               </nav> 
+           </div>
+       </div>
+   </header>
+   
+   
+    <div class="intro">
+         <div class="container">
+             <div class="intro_all">
+                 <div class="intro_img_inside">
+                    <img src="assets/Img/home.png">
+                 </div>
+                 <div class="intro_inner">
+                     <h1 class="intro_title">O Firmie</h1>
+                 </div>
+             </div>
+        </div> 
+        
+        <div class="information">
+           <div class="information_left">
+                <p>SIMPLE - z nami biznes jest prostszy!</p>
+                <img src="assets/Img/man.png">
+                <p>PONAD 24 LATA DOSWIADCZENIA<br>SIMPLE S.A. jest wiodącym w kraju producentem rozwiązań informatycznych do wspomagania zarządzania przedsiębiorstwami. Będąc producentem oprogramowania, dajemy pełną gwarancję dotyczącą jego działania oraz dostosowania do zmieniających się warunków biznesowych i przepisów prawa oraz szybkiej reakcji na zmieniające się potrzeby klientów.</p>
+                <p>PONAD 3500 KLIENTOW<br>Działamy na polskim rynku producentów rozwiązań klasy ERP już od ponad 24 lat! Dostarczamy rozwiązania, które sprawdziły się w wielu zróżnicowanych branżach i doskonale znamy biznes naszych klientów. Nasza oferta dostosowana jest do potrzeb głównych sektorów polskiego rynku. Ze współpracy z nami skorzystało już blisko ponad 3,5 tysiąca firm.</p>
+                <p>PONAD 23 000 UŻYTKOWNIKÓW<br>Nasze produkty zawsze charakteryzowały się udanym połączeniem: innowacyjności, szerokiej funkcjonalności, adaptowalności i skalowalności jak również dbałości o rozsądny budżet, dostosowany do możliwości naszych Klientów. Dlatego w 2010 roku liczba naszych użytkowników przekroczyła 25 tysiące</p>
+                <p>NASI ODBIORCY<br>Odbiorcami naszych rozwiązań są głównie firmy budowlane,</p>
+           </div>
+           <div class="information_right">
+               <p>przedsiębiorstwa produkcyjne, uczelnie wyższe, jednostki medyczne oraz firmy usługowe i handlowe. Widzimy i wspólnie wykorzystujemy możliwości jakie daje proces integracji Polski z Unią Europejską.</p>
+               <p>ZINTEGROWANE ROZWIĄZANIA DLA KAŻDEJ BRANŻY<br>SIMPLE posiada kompleksowe rozwiązania, dedykowane naj większym sektorom naszej gospodarki. W naszej ofercie znajdą Państwo rozwiązania dla firm o różnych profilach działalności (produkcyjnym, budowlanym, usługowym, handlowym), dla uczelni wyższych, jednostek medycznych, instytutów badaw czych czy jednostek rządowych.<br>Nasze doświadczenia obejmują realizacje systemów dedykowa nych pod indywidualne potrzeby klientów oraz integrację wszelkich rozwiązań wspomagających zarządzanie.
+               </p>
+               <p>CERTYFIKATY I REKOMENDACJE<br>SIMPLE S.A. posiada istotne na polskim rynku rekomendacje od Polskiego Towarzystwa Ekonomicznego oraz Stowarzyszenia Księgowych w Polsce, które potwierdzają, że oprogramowanie SIMPLE jest dostosowywane do zmieniających się polskich przepisów prawnych oraz wymagań Unii Europejskiej.  Ponadto SIMPLE S.A. wprowadziło i stosuje system zarządzania jakością ISO 90001:2008 w zakresie: projektowania, produkcji i wdrażania systemów informatycznych, a także  sprzedaż i instalacja sprzętu komputerowego oraz szkolenia.</p>
+               <p>Oprogramowanie SIMPLE zostało wyróżnione również: GAZELĄ BIZNESU, MEDALEM EUROPEJSKIM, statuetką TopBuilder oraz posiada status Microsoft Gold Certified Partner oraz BRE Partner Gold CERTIFICATE.  Osiągnięte wyniki pozwoliły zająć SIMPLE S.A. 30 miejsce w rankingu DIAMENTÓW FORBESA dla województwa mazowieckiego. Firma SIMPLE otrzymała również tytuł "Najlepszy dostawca IT dla przemysłu 2010 w kategorii ERP/MRP II (system polski)- producent".</p>
+               <p>ZAWSZE BLISKO CIEBIE<br>SIMPLE S.A. wraz z Partnerami prowadzi szeroko zakrojoną sprzedaż do Klientów na terenie całego kraju. Chcemy być jak najbliżej naszych klientów, dlatego wciąż dążymy do poszerzania sieci naszej sprzedaży.Unią Europejską.</p>
+           </div>
+        </div>  
+    </div>
+    <div id="sidebar" >
+            <div  id="to_rotate" class="toggle_button" onclick ="openMenu()">
+                <img  src="assets/Img/Close_butt.png">
+            </div>
+            <div id="Menu_text">menu</div>
+            <ul class="MainMenu">
+                <li class="in_sidebar"><a class="in_a">Menu</a></li>
+                <li class="in_sidebar"id="dot"> <a class="in_a" href="#"></a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Aktualności</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Branże</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Produkty</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Usługi</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Referencje</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Kontakt</a> </li>
+                <li class="in_sidebar"id="dot"> <a class="in_a" href="#"></a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">O firmie</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Nagrody</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Relacje</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Inwestorskie</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Partnerzy</a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#">Kariera</a> </li>
+                <li class="in_sidebar"id="dot"> <a class="in_a" href="#"></a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#"><img src="assets/Img/facebook.png"></a> </li>
+                <li class="in_sidebar"> <a class="in_a" href="#"><img src="assets/Img/in.png"></a> </li>
+            </ul>    
+        </div>
+    <footer class="footer"></footer>
+    
+</body>
+</html>    
